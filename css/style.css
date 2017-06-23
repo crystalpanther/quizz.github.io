@@ -47,6 +47,12 @@ h1:link, h1:visited, h1:active, h1:hover, h2:link, h2:visited, h2:active, h2:hov
   padding: 0 15px;
 }
 
+@media screen and (max-width: 750px) {
+  .wrapper {
+    padding: 0 25px;
+  }
+}
+
 .title_section {
   margin: 0px auto;
   padding-top: 100px;
@@ -179,6 +185,7 @@ h1:link, h1:visited, h1:active, h1:hover, h2:link, h2:visited, h2:active, h2:hov
 .info .main_info .img_head_title {
   margin: 0 auto;
   display: block;
+  width: 100%;
 }
 
 @media screen and (max-width: 320px) {
@@ -419,10 +426,12 @@ h1:link, h1:visited, h1:active, h1:hover, h2:link, h2:visited, h2:active, h2:hov
 }
 
 .super_holiday {
+  position: relative;
   background-color: #d4145a;
 }
 
 .super_holiday::after {
+  bottom: -90px;
   border-top: 60px solid #d4145a;
 }
 
@@ -504,6 +513,7 @@ h1:link, h1:visited, h1:active, h1:hover, h2:link, h2:visited, h2:active, h2:hov
 }
 
 .rules {
+  position: relative;
   background-color: white;
   height: 100vh;
 }
@@ -516,6 +526,89 @@ h1:link, h1:visited, h1:active, h1:hover, h2:link, h2:visited, h2:active, h2:hov
   color: #333333;
 }
 
+.rules .btn {
+  display: block;
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #007193;
+  border: solid 1px #007193;
+  padding: 5px 7px;
+  border-radius: 0%;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.rules .rules_container {
+  margin-top: 25px;
+  display: flex;
+}
+
+.rules .rules_container .bar {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.rules .rules_container .bar .lot_section {
+  border-top: solid 1px #00b3e3;
+  padding: 20px 0;
+}
+
+.rules .rules_container .bar .lot_section:first-child {
+  border-top: none;
+}
+
+.rules .rules_container .bar .lot_section .lot_no {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rules .rules_container .bar .lot_section .sub_title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #007193;
+}
+
+.rules .rules_container .bar .lot_section .sub_title span {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.rules .rules_container .bar .lot_section .lots {
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.rules .rules_container .bar .lot_section .rules_text {
+  font-size: 12px;
+  line-height: 1;
+  font-style: italic;
+}
+
+.rules .rules_container .left-bar .lot_section .lot_no {
+  color: #00b3e3;
+}
+
+.rules .rules_container .right-bar .lot_section .lot_no {
+  color: #d4145a;
+}
+
+.rules footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .rules footer .logo_foot {
   margin: 0 auto;
+}
+
+.rules footer .logo_foot img {
+  width: 150px;
 }
